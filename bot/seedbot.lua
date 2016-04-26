@@ -228,9 +228,9 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-	"supergroup",
-	"whitelist",
-	"msg_checks",
+    "supergroup",
+    "whitelist",
+    "msg_checks",
     "plugins",
     "addplug"
     },
@@ -252,7 +252,7 @@ Our channels
 Our website 
 http://WorldBot.ir/
 ]],
-    help_text_realm = [[
+help_text_realm = [[
 Realm Commands:
 ♢□■□■□■□■□■□■□■□♢
 !creategroup [Name]
@@ -328,7 +328,7 @@ This command will send text to [group_id]
 ♢□■□■□■□■□■□■□■□♢
 @ASHI_KING_KABOOS
 ]],
-    help_text = [[
+ help_text = [[
 Commands list :
 ♢□■□■□■□■□■□■□■□♢
 !kick [username|id]
@@ -450,7 +450,7 @@ will return group ban list
 ♢□■□■□■□■□■□■□■□♢
 @ASHI_KING_KABOOS
 ]],
-	help_text_super =[[
+help_text_super =[[
 SuperGroup Commands:
 ♢□■□■□■□■□■□■□■□♢
 !info
