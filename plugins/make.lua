@@ -10,7 +10,7 @@ end
 
 return {
   patterns = {
-  "^[#!/]([Mm]ake)$"
+  "^[#!/]([Mm]ake)$",
   },
   run = run
 }
