@@ -54,7 +54,7 @@ end
 
 return {
     patterns = {
-      "^([Aa]bout)$"
+      "^[#!/]([Aa]bout)$",
     },
   run = run
 }
