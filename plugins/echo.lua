@@ -13,9 +13,9 @@ return {
   description = "Simplest plugin ever!",
   usage = "[Ee]cho [whatever]: echoes the msg",
   patterns = {
-    "^[!/#]([Ee]cho) +(.+)$",    
-    "^([Ee]cho) +(.+)$", 
-    "^(بگو)$ +(.+)$", 
+    "^[!/#]([Ee]cho)$ +(.+)$",    
+    "^([Ee]cho)$ +(.+)$", 
+    "^(بگو)$ +(.+)$" 
   }, 
   run = run 
 }
