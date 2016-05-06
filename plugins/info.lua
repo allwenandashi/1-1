@@ -21,7 +21,7 @@ local function action_by_reply(extra, success, result)
   local chat = 'chat#id'..msg.to.id
   local data = load_data(_config.moderation.data)
   if data[tostring('admins')][tostring(user_id)] then
-    who = 'Admim'
+    who = 'Admin'
   elseif data[tostring(msg.to.id)]['moderators'][tostring(user_id)] then
     who = 'Moderator'
   elseif data[tostring(msg.to.id)]['set_owner'] == tostring(user_id) then
@@ -47,7 +47,7 @@ local function action_by_reply(extra, success, result)
 end
 
 local function run(msg, matches)
-   if matches[1] == 'info' and msg.reply_id then
+   if matches[1] == 'about' and msg.reply_id then
      get_message(msg.reply_id, action_by_reply, {receiver=get_receiver(msg)})
    end
 end
