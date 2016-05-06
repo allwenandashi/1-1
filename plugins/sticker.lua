@@ -5,7 +5,7 @@ local function download(msg, success, result, matches)
     print('File downloaded to:', result)
     os.rename(result, file)
     print('File moved to:', file)
-    send_large_msg(receiver, 'please send /make for create sticker\n@teleHAUL :))', ok_cb, false)
+    send_large_msg(receiver, 'please send /make for create sticker\n@worldtg :))', ok_cb, false)
     redis:del("file:exe")
   else
     print('Error downloading: '..msg.id)
@@ -120,15 +120,14 @@ local function run(msg,matches)
     end
     if matches[1] == 'sticker' then
     	redis:set("file:exe", "waiting")
-    	return 'Please send me photo now\n @WorlsTG :)) '
+    	return 'Please send me photo now\n @WorldTG :)) '
 end
     return
 end
 return {
   patterns = {
-	"^[#!/]([Ss]ticker)$",
-	"%[(photo)%]",
+	"^[!/#]([Ss]ticker)$",
+	"%[(photo)%]"
   },
   run = run,
 }
---by http://telegram.me/BeatBot_team :) --
