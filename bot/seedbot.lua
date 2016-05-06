@@ -450,6 +450,7 @@ will return group ban list
 ♢□■□■□■□■□■□■□■□♢
 @ASHI_KING_KABOOS
 ]],
+
 help_text_super =[[
 SuperGroup Commands:
 ♢□■□■□■□■□■□■□■□♢
