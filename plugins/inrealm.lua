@@ -730,14 +730,14 @@ function run(msg, matches)
 		end
  	end
 
-    if matches[1] == 'creategroup' and matches[2] then
+    if matches[1] == 'cgpgroup' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
     end
 
 	--[[ Experimental
-	if matches[1] == 'createsuper' and matches[2] then
+	if matches[1] == 'cgpsuper' and matches[2] then
 	if not is_sudo(msg) or is_admin1(msg) and is_realm(msg) then
 		return "You cant create groups!"
 	end
@@ -746,7 +746,7 @@ function run(msg, matches)
         return create_group(msg)
     end]]
 
-    if matches[1] == 'createrealm' and matches[2] then
+    if matches[1] == 'cgprealm' and matches[2] then
 			if not is_sudo(msg) then
 				return "Sudo users only !"
 			end
@@ -1045,9 +1045,9 @@ end
 
 return {
   patterns = {
-    "^[#!/](creategroup) (.*)$",
-	"^[#!/](createsuper) (.*)$",
-    "^[#!/](createrealm) (.*)$",
+    "^[#!/](cgpgroup) (.*)$",
+	"^[#!/](cgpsuper) (.*)$",
+    "^[#!/](cgprealm) (.*)$",
     "^[#!/](setabout) (%d+) (.*)$",
     "^[#!/](setrules) (%d+) (.*)$",
     "^[#!/](setname) (.*)$",
